@@ -4,15 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
-import com.example.hogam_20211028.databinding.ActivityMainBinding
+import com.example.hogam_20211028.databinding.ActivityLoginBinding
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityMainBinding
+    lateinit var binding : ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+       binding = DataBindingUtil.setContentView(this,R.layout.activity_login)
 
         binding.loginBtn.setOnClickListener {
 
